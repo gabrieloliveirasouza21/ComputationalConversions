@@ -24,13 +24,12 @@
         /// </summary>
         private void InitializeComponent() {
             Button buttonDecimalBinario;
-            Button button1;
             Button button2;
             Button button3;
+            button1 = new Button();
             panel1 = new Panel();
             label1 = new Label();
             buttonDecimalBinario = new Button();
-            button1 = new Button();
             button2 = new Button();
             button3 = new Button();
             panel1.SuspendLayout();
@@ -38,6 +37,7 @@
             // 
             // buttonDecimalBinario
             // 
+            buttonDecimalBinario.Cursor = Cursors.Hand;
             buttonDecimalBinario.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             buttonDecimalBinario.Location = new Point(97, 244);
             buttonDecimalBinario.Name = "buttonDecimalBinario";
@@ -49,6 +49,7 @@
             // 
             // button1
             // 
+            button1.Cursor = Cursors.Hand;
             button1.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             button1.Location = new Point(411, 244);
             button1.Name = "button1";
@@ -60,6 +61,7 @@
             // 
             // button2
             // 
+            button2.Cursor = Cursors.Hand;
             button2.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             button2.Location = new Point(97, 393);
             button2.Name = "button2";
@@ -70,6 +72,7 @@
             // 
             // button3
             // 
+            button3.Cursor = Cursors.Hand;
             button3.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             button3.Location = new Point(411, 393);
             button3.Name = "button3";
@@ -103,7 +106,7 @@
             label1.Text = "Computational Conversor";
             label1.Click += label1_Click;
             // 
-            // Form1
+            // TelaMenuPrincipal
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(663, 491);
@@ -111,7 +114,7 @@
             ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
-            Name = "Form1";
+            Name = "TelaMenuPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Computational Conversor";
             panel1.ResumeLayout(false);
@@ -124,5 +127,6 @@
         private Panel panel1;
         private Button buttonDecimalBinario;
         private Label label1;
+        private Button button1;
     }
 }
