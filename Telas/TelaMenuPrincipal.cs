@@ -1,3 +1,4 @@
+using ComputationalConversions.Telas;
 using System.Threading;
 
 namespace ComputationalConversions {
@@ -10,7 +11,14 @@ namespace ComputationalConversions {
         }
 
         private void button1_Click(object sender, EventArgs e) {
+            this.Close();
+            th = new Thread(AbrirTelaDecToBin);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
 
+        private void AbrirTelaDecToBin(object? obj) {
+            Application.Run(new DecToBin());
         }
 
         private void button1_Click_1(object sender, EventArgs e) {
